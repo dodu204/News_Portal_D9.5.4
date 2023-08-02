@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}News Portal{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>News Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <!-- Добавьте ссылки на другие страницы, если необходимо -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 News Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

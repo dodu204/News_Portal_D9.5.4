@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}New Article - {{ article.title }}{% endblock %}
+
+{% block content %}
+    <h1>New Article - {{ article.title }}</h1>
+    <p>{{ article.content }}</p>
+    <a href="{{ article.get_absolute_url }}">Read the full article</a>
+{% endblock %}
